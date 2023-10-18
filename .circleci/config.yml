@@ -11,5 +11,6 @@ jobs:
       - checkout
       - run: docker images -a
       - run: docker-compose --verbose run ruby_script
+      - run: docker images -a
       - run: docker-compose --verbose run --build ruby_script
       - run: docker images -a
